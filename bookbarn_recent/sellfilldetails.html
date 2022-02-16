@@ -1,0 +1,58 @@
+<?php
+  include("connection.php");
+  
+    $email=$_GET['email'];
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookBarn:Fill Details to Sell Your Books</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lendoperationstyle.css"> 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">     
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<!-- sell filldetails  -->   
+    <div id="sellPopup">
+        <div id="sellPopupContainer">
+            <div class="closeSellPopupDiv">
+                <a href="sell.html?email=<?php echo $email ?>">
+                <span id="backCategoryPopup"><i class="fas fa-arrow-left"></i></span></a>
+                <a href="home.html?email=<?php echo $email ?>">
+
+                <span id="closeSellPopup">&times;</span></a>
+            </div>
+            <div class="headingDiv">
+                <span class="heading">Post Your Books</span>
+            </div>
+            <form id="sellForm"method="POST" action="sellformdetailsdb.php" enctype="multipart/form-data">
+                <p id="categoryName"></p>
+                <input type="text" placeholder="Title.." name="Title" id="adTitle" required>
+                <input type="text" placeholder="Category.." name="Category" id="adCategory" required>
+                <input type="text" placeholder="Description.." name="Description" id="adDescription" required>
+                <input type="number" placeholder="Price.." name="Price" id="adPrice" required>
+                         
+                <input type="phone" placeholder="Phone number.." name="Phonenumber" id="adPhonenumber" required pattern="[0-9]{10}"/>
+                <input type="email" placeholder="email id.." name="Email" id="adEmail" required>
+                <input type="text" placeholder="Location.." name="Location" id="adLocation"required>
+                <input type="file" name="Image" id="adImage" >
+                <input type="submit" name="save" value="Add">
+            </form>
+        </div>
+    </div>
+    <!-- sell filldetails -->   
+</body>
+</html>
+

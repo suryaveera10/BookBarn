@@ -1,0 +1,209 @@
+*{
+    transition: .1s;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+input{
+    padding: 12px 25px;
+    border:  none;
+    background:  rgb(228, 228, 228);
+    border: solid 1px rgb(228, 228, 228);
+    border-radius: 20px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+input:focus{
+    outline: none;
+    background: #fff;
+    border: solid 1px #ccc;
+}
+
+
+
+/* category popup */
+#categoryPopup a:hover{
+    text-decoration: underline;
+}
+#categoryPopup .headingDiv{
+    margin-bottom: 25px;
+}
+#categoryPopup .heading{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2A65EA;
+}
+#categoryPopupContainer{
+    box-shadow: 0 3px 12px #eb7500,0px 0px 12px 2px red;
+    background: #e8e8e8;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 80vh;
+    border-radius: 5px;
+}
+#categoryPopupContainer:hover{
+
+    background-color:#fff;
+    color: black;
+}
+#categoryName{
+    text-transform: uppercase;
+}
+.closeCategoryPopupDiv{
+    overflow: hidden;
+}
+#closeCategoryPopup{
+    float: right;
+    font-size: 24px;
+    line-height: 1;
+}
+#backCategoryPopup{
+    float: left;
+    font-size: 24px;
+    line-height: 1;
+}
+#backCategoryPopup:hover{
+    cursor: pointer;
+    color: #07c7f7;
+}
+#closeCategoryPopup:hover{
+    cursor: pointer;
+    color: red;
+}
+.radioContainer {
+    display: block;
+    position: relative;
+    padding: 10px;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    border: solid 1px #ccc;
+    border-bottom: 0;
+}
+.radioContainer:last-of-type{
+    border-bottom: solid 1px #ccc;
+}
+.radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radioCheck {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.radioContainer:hover input ~ .radioCheck {
+    background-color: #ccc;
+}
+.radioContainer input:checked ~ .radioCheck {
+    background-color: #2A65EA;
+}
+.radioCheck:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radioContainer input:checked ~ .radioCheck:after {
+    display: block;
+}
+.radioContainer .radioCheck:after {
+    top: 6px;
+    left: 6px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+}
+#categoryForm input[type="submit"]{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+#categoryPopup input{
+    margin: 8px 0;
+}
+#categoryPopup input[type="submit"]{
+    background: #2A65EA;
+    color: #fff;
+}
+#categoryPopup input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(72, 123, 243);
+}
+
+
+
+/* sell filldetails */
+
+
+
+#sellPopup .heading{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    color: #333;
+}
+#sellPopupContainer{
+    box-shadow: 0 3px 12px #eb7500,0px 0px 12px 2px red;
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 100vh;
+    border-radius: 5px;
+}
+#sellPopup input{
+    margin: 8px 0;
+}
+#sellPopup input[type="submit"]{
+    background: #2A65EA;
+    color: #fff;
+}
+#sellPopup input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(72, 123, 243);
+}
+.closeSellPopupDiv{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#closeSellPopup{
+    float: right;
+    font-size: 24px;
+    line-height: 1;
+}
+#closeSellPopup:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

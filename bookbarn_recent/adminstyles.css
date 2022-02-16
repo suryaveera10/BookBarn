@@ -1,0 +1,94 @@
+body{
+		background: linear-gradient(90deg, #121212 0%, #292929 99%);
+ 
+	font-size: 16px;
+	/*background-color: #121212;*/
+	font-family: 'Oxygen',sans-serif;
+
+}
+#header-nav{
+	/*background: linear-gradient(90deg, #121212 0%, #292929 99%);*/
+	background-color: #333333;
+	border-radius: 0;
+	border: 0;
+} 
+#logo-img{
+	background: url(logo.PNG) no-repeat;
+	width:134px ;
+	height: 132px;
+	margin: 10px 15px 10px 0px;
+}
+.navbar-brand{
+	margin-top: 20px;
+	font-family: 'Original Surfer', cursive;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px burlywood;
+}
+.navbar-brand h1{
+	color: white;
+	font-size: 1.2em;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#nav-list{
+	margin-top: 30px;
+
+}
+#nav-list a{
+	color: white;
+	text-align: center;
+}
+#nav-list a:hover{
+	background: #9c9fb8;
+}
+#nav-list a span{
+	font-size: 2em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border:2px solid black;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+}
+
+
+@media (max-width: 767px){
+
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	#collapsable-nav a{
+		font-size: 1.2em;
+	} 
+	#collapsable-nav a span{
+		font-size: 1em; 
+		margin-right: 5px;
+	}
+}
+
+/****/
+
+.table{
+	font-size: 1.5em;
+	color: white;
+}
+tr a
+{
+	color: white;
+	padding:7px;
+}
+tr a:hover{
+	padding: 7px;
+	background-color: #696868;
+	color: white;
+	text-decoration: none;
+}
+
+/****/
+
+.tile{
+	background-color: red;
+}

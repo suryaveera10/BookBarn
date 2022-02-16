@@ -1,0 +1,249 @@
+body{
+		background: linear-gradient(90deg, #121212 0%, #292929 99%);
+ 
+	font-size: 16px;
+	/*background-color: #121212;*/
+	font-family: 'Oxygen',sans-serif;
+
+}
+#header-nav{
+	/*background: linear-gradient(90deg, #121212 0%, #292929 99%);*/
+	background-color: #333333;
+	border-radius: 0;
+	border: 0;
+} 
+#logo-img{
+	background: url(logo.PNG) no-repeat;
+	width:134px ;
+	height: 132px;
+	margin: 10px 15px 10px 0px;
+}
+.navbar-brand{
+	margin-top: 20px;
+	font-family: 'Original Surfer', cursive;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px burlywood;
+}
+.navbar-brand h1{
+	color: white;
+	font-size: 1.2em;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#nav-list{
+	margin-top: 30px;
+
+}
+#nav-list a{
+	color: white;
+	text-align: center;
+}
+#nav-list a:hover{
+	background: #9c9fb8;
+}
+#nav-list a span{
+	font-size: 2em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border:2px solid black;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+}
+
+
+@media (max-width: 767px){
+
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	#collapsable-nav a{
+		font-size: 1.2em;
+	} 
+	#collapsable-nav a span{
+		font-size: 1em; 
+		margin-right: 5px;
+	}
+}
+
+
+@media (min-width: 1200px){
+	.buttons{
+	margin-left: 38%;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.buttons{
+	margin-left: 36%;
+
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.buttons{
+	margin-left: 32%;
+}
+}
+
+@media (max-width: 767px){
+
+	.buttons{
+	margin-left: 30%;
+	}
+
+
+}
+
+
+.btn-outline-light {
+	margin-right: 50px;
+
+}
+.btn-space {
+	margin-top: 20px;
+	margin-right:10px;
+	font-weight: 700;
+	font-size: 3rem;
+	box-shadow: 0 3px 12px #eb7500,0px 0px 12px 2px red;
+	color: black;
+}
+#main-button:hover{
+	background-color: #121212;
+	color: whitesmoke;
+
+}
+.header-main{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+
+/* Overview */
+#overview{
+	background: linear-gradient(90deg, #121212 0%, #292929 99%);
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+
+}
+.section-title{
+	font-weight: 500;
+	font-size: 4rem;
+	text-shadow: 2px 2px 8px red;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.info-width {
+	margin-left: 20%;
+	margin-bottom: 10%;
+	width: 60%;
+	font-size: 1.8rem;
+}
+
+.overview-row {
+	margin-top: 4rem;
+	margin-bottom: 7rem;
+
+}
+.overview-header {
+	font-weight: 700;
+	font-size: 2.8rem;
+}
+.overview-icon, .overview-header, .info-width {
+	padding: 1rem 0;
+}
+/*end overview*/
+
+
+.wrap {
+	margin-top: 100px;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonb {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.buttonb::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.buttonb:hover, .buttonb:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.buttonb:hover::before, .buttonb:focus::before {
+  opacity: 1;
+}
+
+.buttonb::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.buttonb:hover::after, buttonb:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+
+
+
